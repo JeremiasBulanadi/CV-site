@@ -1,4 +1,5 @@
 const { plugins } = require("./postcss.config");
+const colors = require('tailwindcss/colors');
 
 const production = !process.env.ROLLUP_WATCH;
 module.exports = {
@@ -13,5 +14,15 @@ module.exports = {
             './src/App.svelte',
         ],
         enabled: production // disable purge in dev
+    },
+    theme: {
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            gray: colors.trueGray,
+            red: colors.red,
+            blue: colors.sky,
+            yellow: colors.amber,
+        }
     }
 };
