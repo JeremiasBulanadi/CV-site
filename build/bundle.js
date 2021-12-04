@@ -360,12 +360,16 @@ var app = (function () {
     			t5 = space();
     			a = element("a");
     			a.textContent = "Get Resume";
+    			attr_dev(h3, "class", "text svelte-1bkqftb");
     			add_location(h3, file$1, 2, 8, 65);
-    			add_location(h1, file$1, 5, 8, 124);
-    			add_location(h2, file$1, 8, 8, 185);
+    			attr_dev(h1, "class", "text svelte-1bkqftb");
+    			add_location(h1, file$1, 5, 8, 137);
+    			attr_dev(h2, "class", "text svelte-1bkqftb");
+    			add_location(h2, file$1, 8, 8, 211);
     			attr_dev(a, "href", "./JeremiasBulanadi-Resume.pdf");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$1, 11, 8, 248);
+    			attr_dev(a, "class", "text svelte-1bkqftb");
+    			add_location(a, file$1, 11, 8, 287);
     			attr_dev(div, "class", "container flex justify-center");
     			add_location(div, file$1, 1, 4, 12);
     			add_location(main, file$1, 0, 0, 0);
@@ -443,7 +447,7 @@ var app = (function () {
     			main = element("main");
     			create_component(intro.$$.fragment);
     			attr_dev(main, "class", "bg-gray-800 svelte-18gpxaw");
-    			add_location(main, file, 6, 0, 87);
+    			add_location(main, file, 6, 0, 93);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
