@@ -16,6 +16,7 @@
     "autoprefixer": "^9.8.8",
     "concurrently": "^6.4.0",
     "cross-env": "^7.0.3",
+    "node-sass": "^6.0.1",
     "postcss-cli": "^7.1.2",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
@@ -23,9 +24,11 @@
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.0",
     "svelte": "^3.0.0",
+    "svelte-preprocess": "^4.9.8",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "sirv-cli": "^1.0.0"
   }
 }
