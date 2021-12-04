@@ -1,4 +1,5 @@
 import svelte from 'rollup-plugin-svelte';
+import sveltePreprocess from 'svelte-preprocess';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
@@ -70,6 +71,15 @@ export default {
 		// instead of npm run dev), minify
 		production && terser()
 	],
+	preprocess: sveltePreprocess({
+		sourceMap: !production,
+		postcss: {
+			plugins: [
+				require("tailwindcss"),
+				require("autoprefixer"),
+			],
+		},
+	}),
 	watch: {
 		clearScreen: false
 	}

@@ -9,8 +9,11 @@
 	</Intro>
 </main>
 
-<style>
-
+<style global lang="postcss">
+	@tailwind base;
+  	@tailwind components;
+  	@tailwind utilities;
+	  
 	main {
 		width: 100vw;
 		height: 100vh;
