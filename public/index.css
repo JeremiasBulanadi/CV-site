@@ -620,6 +620,11 @@ video {
   }
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(38, 38, 38, var(--tw-bg-opacity));
+}
+
 *, ::before, ::after {
   --tw-shadow: 0 0 #0000;
 }
