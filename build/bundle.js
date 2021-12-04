@@ -336,7 +336,6 @@ var app = (function () {
 
     function create_fragment$1(ctx) {
     	let main;
-    	let div;
     	let h3;
     	let t1;
     	let h1;
@@ -348,7 +347,6 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			main = element("main");
-    			div = element("div");
     			h3 = element("h3");
     			h3.textContent = "Hello there, I'm";
     			t1 = space();
@@ -360,18 +358,17 @@ var app = (function () {
     			t5 = space();
     			a = element("a");
     			a.textContent = "Get Resume";
-    			attr_dev(h3, "class", "text svelte-1bkqftb");
-    			add_location(h3, file$1, 2, 8, 65);
+    			attr_dev(h3, "class", "text-yellow-400");
+    			add_location(h3, file$1, 2, 4, 57);
     			attr_dev(h1, "class", "text svelte-1bkqftb");
-    			add_location(h1, file$1, 5, 8, 137);
+    			add_location(h1, file$1, 5, 4, 128);
     			attr_dev(h2, "class", "text svelte-1bkqftb");
-    			add_location(h2, file$1, 8, 8, 211);
+    			add_location(h2, file$1, 8, 4, 190);
     			attr_dev(a, "href", "./JeremiasBulanadi-Resume.pdf");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "text svelte-1bkqftb");
-    			add_location(a, file$1, 11, 8, 287);
-    			attr_dev(div, "class", "container flex justify-center");
-    			add_location(div, file$1, 1, 4, 12);
+    			add_location(a, file$1, 11, 4, 254);
+    			attr_dev(main, "class", "container flex justify-between");
     			add_location(main, file$1, 0, 0, 0);
     		},
     		l: function claim(nodes) {
@@ -379,14 +376,13 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, main, anchor);
-    			append_dev(main, div);
-    			append_dev(div, h3);
-    			append_dev(div, t1);
-    			append_dev(div, h1);
-    			append_dev(div, t3);
-    			append_dev(div, h2);
-    			append_dev(div, t5);
-    			append_dev(div, a);
+    			append_dev(main, h3);
+    			append_dev(main, t1);
+    			append_dev(main, h1);
+    			append_dev(main, t3);
+    			append_dev(main, h2);
+    			append_dev(main, t5);
+    			append_dev(main, a);
     		},
     		p: noop,
     		i: noop,
@@ -446,7 +442,7 @@ var app = (function () {
     		c: function create() {
     			main = element("main");
     			create_component(intro.$$.fragment);
-    			attr_dev(main, "class", "bg-gray-800 svelte-18gpxaw");
+    			attr_dev(main, "class", "bg-gray-800 svelte-1bhsv9y");
     			add_location(main, file, 6, 0, 93);
     		},
     		l: function claim(nodes) {
