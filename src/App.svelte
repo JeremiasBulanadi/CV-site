@@ -1,19 +1,24 @@
 <script>
-
+import Navbar from './components/Navbar.svelte';
 </script>
 
 <main class="wrapper bg-gray-900">
-	<div class="py-8 px-4 bg-red-400 border border-indigo-500 shadow-lg">
-		this is a card
+	<div class="flex flex-col">
+		<Navbar/>
 	</div>
+
+	<div class="test-bar bg-red-500"></div>
 </main>
 
 <style>
 	main {
 		text-align: center;
-		padding: 2em;
-		max-width: 240px;
 		margin: 0 auto;
+	}
+
+	.test-bar {
+		width: 100px;
+		height: 4000px;
 	}
 
 	h1 {
@@ -24,6 +29,8 @@
 	}
 
 	.wrapper {
+		position: relative;
+
 		width: 100vw;
 		height: 100vh;
 	}
