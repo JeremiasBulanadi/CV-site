@@ -1,38 +1,30 @@
 <script>
-import Navbar from './components/Navbar.svelte';
+	import Navbar from './components/Navbar.svelte';
+	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
+	let firstLoaded = false;
+	onMount(() => {
+		firstLoaded = true;
+	})
 </script>
 
-<main class="wrapper bg-gray-900">
-	<div class="flex flex-col">
-		<Navbar/>
+<main class="bg-gray-900 flex justify-center">
+	<div class="container">
+		{#if firstLoaded}
+			 <div in:fade={{ delay: 100 , duration: 1500 }}>
+				<Navbar offset={20}/>
+			</div>
+		{/if}
+		<div class="container flex flex-col justify-center">
+			<div class="test-bar bg-red-500"></div>
+		</div>
 	</div>
-
-	<div class="test-bar bg-red-500"></div>
 </main>
 
 <style>
-	main {
-		text-align: center;
-		margin: 0 auto;
-	}
-
 	.test-bar {
 		width: 100px;
 		height: 4000px;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	.wrapper {
-		position: relative;
-
-		width: 100vw;
-		height: 100vh;
 	}
 
 	@media (min-width: 640px) {
