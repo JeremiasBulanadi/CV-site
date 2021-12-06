@@ -3,9 +3,9 @@
 </script>
 
 <section id="Intro" class="flex flex-col justify-center py-4 sm:py-4">
-    <h3 class="font-readex text-3xl">Hello, my name is</h3>
+    <h3 class="font-readex text-2xl">Hello, my name is</h3>
     <h1 class="font-lato font-extrabold text-indigo-500 hover:text-indigo-600 transition">Jeremias Bulanadi.</h1>
-    <h1 class="font-roboto font-bold text-gray-600 hover:text-gray-700 transition" style="margin-top: -20px">I like building things.</h1>
+    <h1 class="font-roboto font-bold text-gray-600 hover:text-gray-700 transition">I like building things.</h1>
     <div class="p-container">
         <p class="font-roboto text-base">
             I'm a soon to be computer science graduate. I have a passion
@@ -26,6 +26,7 @@
 <style>
     h1 {
         font-size: clamp(40px, 8vw, 80px);
+        line-height: 120%;
     }
 
     section {
