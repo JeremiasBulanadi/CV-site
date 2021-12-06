@@ -1,5 +1,7 @@
 <script>
 	import Navbar from './components/Navbar.svelte';
+	import Intro from './components/Intro.svelte';
+
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	let firstLoaded = false;
@@ -8,23 +10,26 @@
 	})
 </script>
 
-<main class="bg-gray-900 flex justify-center">
+<main class="bg-gray-200 flex justify-center">
 	<div class="container">
 		{#if firstLoaded}
 			 <div in:fade={{ delay: 100 , duration: 1500 }}>
 				<Navbar offset={20}/>
 			</div>
 		{/if}
-		<div class="container flex flex-col justify-center">
-			<div class="test-bar bg-red-500"></div>
+		<div class="container flex flex-col justify-center items-center">
+			<Intro/>
 		</div>
 	</div>
 </main>
 
 <style>
-	.test-bar {
-		width: 100px;
-		height: 4000px;
+	main {
+		min-height: 100vh;
+	}
+
+	.container {
+		margin: 0 10px 0 10px;
 	}
 
 	@media (min-width: 640px) {
