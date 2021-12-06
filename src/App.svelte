@@ -1,6 +1,7 @@
 <script>
 	import Navbar from './components/Navbar.svelte';
 	import Intro from './components/Intro.svelte';
+	import About from './components/About.svelte';
 	import IconBar from './components/IconBar.svelte';
 
 	import { onMount } from 'svelte';
@@ -12,7 +13,7 @@
 </script>
 
 <main class="bg-gray-200 flex justify-center">
-	<div class="container wrapper">
+	<div class="container wrapper sm:px-1">
 		{#if firstLoaded}
 			 <div in:fade={{ delay: 100 , duration: 1500 }}>
 				<Navbar offset={20}/>
@@ -20,6 +21,7 @@
 		{/if}
 		<div class="container flex flex-col justify-center items-center">
 			<Intro/>
+			<About/>
 		</div>
 
 		{#if firstLoaded}
