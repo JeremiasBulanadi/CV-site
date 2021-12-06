@@ -24,9 +24,11 @@
 	</div>
 </main>
 
-<div class="side-bar-container">
-	<IconBar/>	
-</div>
+{#if firstLoaded}
+	 <div in:fade={{ delay: 100 , duration: 1500 }} class="side-bar-container">
+		 <IconBar/>	
+	 </div>
+{/if}
 
 
 <style>
