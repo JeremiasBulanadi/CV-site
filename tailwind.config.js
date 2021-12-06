@@ -5,7 +5,13 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto'],
+        lato: ['Lato'],
+        readex: ['Readex Pro']
+      }
+    },
   },
   variants: {
     extend: {},
