@@ -3,9 +3,9 @@
 </script>
 
 
-<a href="#{tabName}" class="flex">
+<a href="#{tabName}" class="flex text-robot font-semibold">
     <div class="tab flex items-center">
-        <div class="px-2 mx-auto">
+        <div class="px-2 mx-auto text-gray-700">
             {tabName}
         </div>
     </div>
@@ -21,7 +21,6 @@
     }
 
     .tab {
-        background-color: red;
         width: 100px;
         min-height: 100%;
         
@@ -31,7 +30,7 @@
     .tab::after {
         content: "";
         width: inherit;
-        border-bottom: solid 4px teal;
+        border-bottom: solid 4px #6366F1;
         position: absolute;
         bottom: 0;
         z-index: 1;

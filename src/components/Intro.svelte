@@ -4,8 +4,8 @@
 
 <section id="Intro" class="flex flex-col justify-center py-4 sm:py-4">
     <h3 class="font-readex text-3xl">Hello, my name is</h3>
-    <h1 class="font-lato font-extrabold text-indigo-500">Jeremias Bulanadi.</h1>
-    <h1 class="font-roboto font-bold text-gray-600">I like building things.</h1>
+    <h1 class="font-lato font-extrabold text-indigo-500 hover:text-indigo-600 transition">Jeremias Bulanadi.</h1>
+    <h1 class="font-roboto font-bold text-gray-600 hover:text-gray-700 transition" style="margin-top: -20px">I like building things.</h1>
     <div class="p-container">
         <p class="font-roboto text-base">
             I'm a soon to be computer science graduate. I have a passion
@@ -16,7 +16,7 @@
     
     <div class="button-container">
         <a href="./JeremiasBulanadi-Resume.pdf" target="_blank">
-            <button class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 border border-gray-400 rounded shadow">
+            <button class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 border border-gray-400 rounded shadow transition">
                 > Download my resume
             </button>
         </a>

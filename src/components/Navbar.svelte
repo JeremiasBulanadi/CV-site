@@ -51,7 +51,7 @@
 <svelte:window bind:scrollY={y} />
 
 <header>
-    <nav use:setTransitionDuration id="navbar" class="bg-gray-500 bg-opacity-80 fixed top-0 left-0 z-50 {headerClass}">
+    <nav use:setTransitionDuration id="navbar" class="bg-gray-200 bg-opacity-80 fixed top-0 left-0 z-50 {headerClass}">
         <div id="nav-content" class="flex justify-between">
             <div class="nav-side flex">
                 <div class="logo-container">
@@ -64,9 +64,9 @@
                     <Tab tabName={"About"} />
                     <Tab tabName={"Contact"} />
                 </div>
-                <div class="flex items-center px-4">
+                <div class="flex items-center px-6">
                     <a href="./JeremiasBulanadi-Resume.pdf" target="_blank">
-                        <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        <button class="bg-transparent hover:bg-indigo-500 text-indigo-700 font-semibold hover:text-white py-2 px-4 border border-indigo-500 hover:border-transparent rounded transition">
                             Resume
                         </button>
                     </a>

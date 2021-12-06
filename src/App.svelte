@@ -1,6 +1,7 @@
 <script>
 	import Navbar from './components/Navbar.svelte';
 	import Intro from './components/Intro.svelte';
+	import IconBar from './components/IconBar.svelte';
 
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
@@ -23,6 +24,11 @@
 	</div>
 </main>
 
+<div class="side-bar-container">
+	<IconBar/>	
+</div>
+
+
 <style>
 	main {
 		min-height: 100vh;
@@ -30,6 +36,13 @@
 
 	.container {
 		margin: 0 10px 0 10px;
+	}
+
+	.side-bar-container {
+		position: fixed;
+		
+		bottom: 0;
+		left: 80px;
 	}
 
 	@media (min-width: 640px) {
