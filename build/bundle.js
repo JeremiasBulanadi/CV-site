@@ -101,6 +101,9 @@ var app = (function () {
     function space() {
         return text(' ');
     }
+    function empty() {
+        return text('');
+    }
     function listen(node, event, handler, options) {
         node.addEventListener(event, handler, options);
         return () => node.removeEventListener(event, handler, options);
@@ -1391,7 +1394,7 @@ var app = (function () {
     const file = "src\\App.svelte";
 
     // (16:2) {#if firstLoaded}
-    function create_if_block(ctx) {
+    function create_if_block_1(ctx) {
     	let div;
     	let navbar;
     	let div_intro;
@@ -1434,9 +1437,63 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block.name,
+    		id: create_if_block_1.name,
     		type: "if",
     		source: "(16:2) {#if firstLoaded}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (27:0) {#if firstLoaded}
+    function create_if_block(ctx) {
+    	let div;
+    	let iconbar;
+    	let div_intro;
+    	let current;
+    	iconbar = new IconBar({ $$inline: true });
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			create_component(iconbar.$$.fragment);
+    			attr_dev(div, "class", "side-bar-container svelte-58vmcd");
+    			add_location(div, file, 27, 2, 659);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			mount_component(iconbar, div, null);
+    			current = true;
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(iconbar.$$.fragment, local);
+
+    			if (!div_intro) {
+    				add_render_callback(() => {
+    					div_intro = create_in_transition(div, fade, { delay: 100, duration: 1500 });
+    					div_intro.start();
+    				});
+    			}
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(iconbar.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			destroy_component(iconbar);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block.name,
+    		type: "if",
+    		source: "(27:0) {#if firstLoaded}",
     		ctx
     	});
 
@@ -1450,32 +1507,29 @@ var app = (function () {
     	let div0;
     	let intro;
     	let t1;
-    	let div2;
-    	let iconbar;
+    	let if_block1_anchor;
     	let current;
-    	let if_block = /*firstLoaded*/ ctx[0] && create_if_block(ctx);
+    	let if_block0 = /*firstLoaded*/ ctx[0] && create_if_block_1(ctx);
     	intro = new Intro({ $$inline: true });
-    	iconbar = new IconBar({ $$inline: true });
+    	let if_block1 = /*firstLoaded*/ ctx[0] && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
     			main = element("main");
     			div1 = element("div");
-    			if (if_block) if_block.c();
+    			if (if_block0) if_block0.c();
     			t0 = space();
     			div0 = element("div");
     			create_component(intro.$$.fragment);
     			t1 = space();
-    			div2 = element("div");
-    			create_component(iconbar.$$.fragment);
+    			if (if_block1) if_block1.c();
+    			if_block1_anchor = empty();
     			attr_dev(div0, "class", "container flex flex-col justify-center items-center svelte-58vmcd");
     			add_location(div0, file, 20, 2, 528);
     			attr_dev(div1, "class", "container svelte-58vmcd");
     			add_location(div1, file, 14, 1, 380);
     			attr_dev(main, "class", "bg-gray-200 flex justify-center svelte-58vmcd");
     			add_location(main, file, 13, 0, 331);
-    			attr_dev(div2, "class", "side-bar-container svelte-58vmcd");
-    			add_location(div2, file, 26, 0, 638);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1483,32 +1537,53 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, main, anchor);
     			append_dev(main, div1);
-    			if (if_block) if_block.m(div1, null);
+    			if (if_block0) if_block0.m(div1, null);
     			append_dev(div1, t0);
     			append_dev(div1, div0);
     			mount_component(intro, div0, null);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, div2, anchor);
-    			mount_component(iconbar, div2, null);
+    			if (if_block1) if_block1.m(target, anchor);
+    			insert_dev(target, if_block1_anchor, anchor);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
     			if (/*firstLoaded*/ ctx[0]) {
-    				if (if_block) {
+    				if (if_block0) {
     					if (dirty & /*firstLoaded*/ 1) {
-    						transition_in(if_block, 1);
+    						transition_in(if_block0, 1);
     					}
     				} else {
-    					if_block = create_if_block(ctx);
-    					if_block.c();
-    					transition_in(if_block, 1);
-    					if_block.m(div1, t0);
+    					if_block0 = create_if_block_1(ctx);
+    					if_block0.c();
+    					transition_in(if_block0, 1);
+    					if_block0.m(div1, t0);
     				}
-    			} else if (if_block) {
+    			} else if (if_block0) {
     				group_outros();
 
-    				transition_out(if_block, 1, 1, () => {
-    					if_block = null;
+    				transition_out(if_block0, 1, 1, () => {
+    					if_block0 = null;
+    				});
+
+    				check_outros();
+    			}
+
+    			if (/*firstLoaded*/ ctx[0]) {
+    				if (if_block1) {
+    					if (dirty & /*firstLoaded*/ 1) {
+    						transition_in(if_block1, 1);
+    					}
+    				} else {
+    					if_block1 = create_if_block(ctx);
+    					if_block1.c();
+    					transition_in(if_block1, 1);
+    					if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
+    				}
+    			} else if (if_block1) {
+    				group_outros();
+
+    				transition_out(if_block1, 1, 1, () => {
+    					if_block1 = null;
     				});
 
     				check_outros();
@@ -1516,24 +1591,24 @@ var app = (function () {
     		},
     		i: function intro$1(local) {
     			if (current) return;
-    			transition_in(if_block);
+    			transition_in(if_block0);
     			transition_in(intro.$$.fragment, local);
-    			transition_in(iconbar.$$.fragment, local);
+    			transition_in(if_block1);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(if_block);
+    			transition_out(if_block0);
     			transition_out(intro.$$.fragment, local);
-    			transition_out(iconbar.$$.fragment, local);
+    			transition_out(if_block1);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(main);
-    			if (if_block) if_block.d();
+    			if (if_block0) if_block0.d();
     			destroy_component(intro);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(div2);
-    			destroy_component(iconbar);
+    			if (if_block1) if_block1.d(detaching);
+    			if (detaching) detach_dev(if_block1_anchor);
     		}
     	};
 
