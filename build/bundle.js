@@ -101,9 +101,6 @@ var app = (function () {
     function space() {
         return text(' ');
     }
-    function empty() {
-        return text('');
-    }
     function listen(node, event, handler, options) {
         node.addEventListener(event, handler, options);
         return () => node.removeEventListener(event, handler, options);
@@ -116,9 +113,6 @@ var app = (function () {
     }
     function children(element) {
         return Array.from(element.childNodes);
-    }
-    function set_style(node, key, value, important) {
-        node.style.setProperty(key, value, important ? 'important' : '');
     }
     function custom_event(type, detail, bubbles = false) {
         const e = document.createEvent('CustomEvent');
@@ -1145,26 +1139,25 @@ var app = (function () {
     			a = element("a");
     			button = element("button");
     			button.textContent = "> Download my resume";
-    			attr_dev(h3, "class", "font-readex text-3xl");
+    			attr_dev(h3, "class", "font-readex text-2xl");
     			add_location(h3, file$2, 5, 4, 101);
-    			attr_dev(h10, "class", "font-lato font-extrabold text-indigo-500 hover:text-indigo-600 transition svelte-1thgt87");
+    			attr_dev(h10, "class", "font-lato font-extrabold text-indigo-500 hover:text-indigo-600 transition svelte-1ysctf2");
     			add_location(h10, file$2, 6, 4, 162);
-    			attr_dev(h11, "class", "font-roboto font-bold text-gray-600 hover:text-gray-700 transition svelte-1thgt87");
-    			set_style(h11, "margin-top", "-20px");
+    			attr_dev(h11, "class", "font-roboto font-bold text-gray-600 hover:text-gray-700 transition svelte-1ysctf2");
     			add_location(h11, file$2, 7, 4, 277);
-    			attr_dev(p, "class", "font-roboto text-base svelte-1thgt87");
-    			add_location(p, file$2, 9, 8, 451);
-    			attr_dev(div0, "class", "p-container svelte-1thgt87");
-    			add_location(div0, file$2, 8, 4, 416);
+    			attr_dev(p, "class", "font-roboto text-base svelte-1ysctf2");
+    			add_location(p, file$2, 9, 8, 425);
+    			attr_dev(div0, "class", "p-container svelte-1ysctf2");
+    			add_location(div0, file$2, 8, 4, 390);
     			attr_dev(button, "class", "bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 border border-gray-400 rounded shadow transition");
-    			add_location(button, file$2, 18, 12, 828);
+    			add_location(button, file$2, 18, 12, 802);
     			attr_dev(a, "href", "./JeremiasBulanadi-Resume.pdf");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$2, 17, 8, 758);
-    			attr_dev(div1, "class", "button-container svelte-1thgt87");
-    			add_location(div1, file$2, 16, 4, 718);
+    			add_location(a, file$2, 17, 8, 732);
+    			attr_dev(div1, "class", "button-container svelte-1ysctf2");
+    			add_location(div1, file$2, 16, 4, 692);
     			attr_dev(section, "id", "Intro");
-    			attr_dev(section, "class", "flex flex-col justify-center py-4 sm:py-4 svelte-1thgt87");
+    			attr_dev(section, "class", "flex flex-col justify-center py-4 sm:py-4 svelte-1ysctf2");
     			add_location(section, file$2, 4, 0, 25);
     		},
     		l: function claim(nodes) {
@@ -1405,7 +1398,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(navbar.$$.fragment);
-    			add_location(div, file, 16, 4, 430);
+    			add_location(div, file, 16, 4, 438);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1446,7 +1439,7 @@ var app = (function () {
     	return block;
     }
 
-    // (27:0) {#if firstLoaded}
+    // (25:2) {#if firstLoaded}
     function create_if_block(ctx) {
     	let div;
     	let iconbar;
@@ -1458,8 +1451,8 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(iconbar.$$.fragment);
-    			attr_dev(div, "class", "side-bar-container svelte-58vmcd");
-    			add_location(div, file, 27, 2, 659);
+    			attr_dev(div, "class", "side-bar-container svelte-yaeynw");
+    			add_location(div, file, 25, 3, 652);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1493,7 +1486,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(27:0) {#if firstLoaded}",
+    		source: "(25:2) {#if firstLoaded}",
     		ctx
     	});
 
@@ -1507,7 +1500,6 @@ var app = (function () {
     	let div0;
     	let intro;
     	let t1;
-    	let if_block1_anchor;
     	let current;
     	let if_block0 = /*firstLoaded*/ ctx[0] && create_if_block_1(ctx);
     	intro = new Intro({ $$inline: true });
@@ -1523,12 +1515,11 @@ var app = (function () {
     			create_component(intro.$$.fragment);
     			t1 = space();
     			if (if_block1) if_block1.c();
-    			if_block1_anchor = empty();
-    			attr_dev(div0, "class", "container flex flex-col justify-center items-center svelte-58vmcd");
-    			add_location(div0, file, 20, 2, 528);
-    			attr_dev(div1, "class", "container svelte-58vmcd");
+    			attr_dev(div0, "class", "container flex flex-col justify-center items-center svelte-yaeynw");
+    			add_location(div0, file, 20, 2, 536);
+    			attr_dev(div1, "class", "container wrapper svelte-yaeynw");
     			add_location(div1, file, 14, 1, 380);
-    			attr_dev(main, "class", "bg-gray-200 flex justify-center svelte-58vmcd");
+    			attr_dev(main, "class", "bg-gray-200 flex justify-center svelte-yaeynw");
     			add_location(main, file, 13, 0, 331);
     		},
     		l: function claim(nodes) {
@@ -1541,9 +1532,8 @@ var app = (function () {
     			append_dev(div1, t0);
     			append_dev(div1, div0);
     			mount_component(intro, div0, null);
-    			insert_dev(target, t1, anchor);
-    			if (if_block1) if_block1.m(target, anchor);
-    			insert_dev(target, if_block1_anchor, anchor);
+    			append_dev(div1, t1);
+    			if (if_block1) if_block1.m(div1, null);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -1577,7 +1567,7 @@ var app = (function () {
     					if_block1 = create_if_block(ctx);
     					if_block1.c();
     					transition_in(if_block1, 1);
-    					if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
+    					if_block1.m(div1, null);
     				}
     			} else if (if_block1) {
     				group_outros();
@@ -1606,9 +1596,7 @@ var app = (function () {
     			if (detaching) detach_dev(main);
     			if (if_block0) if_block0.d();
     			destroy_component(intro);
-    			if (detaching) detach_dev(t1);
-    			if (if_block1) if_block1.d(detaching);
-    			if (detaching) detach_dev(if_block1_anchor);
+    			if (if_block1) if_block1.d();
     		}
     	};
 
