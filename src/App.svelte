@@ -34,7 +34,7 @@
 		
 		<footer class="flex flex-col justify-center items-center pt-4 pb-8 font-lato font-semibold text-gray-400 text-sm text-center">
 			<p >Site made by Jeremias Bulanadi</p>
-			<a id="GithubLink" href="https://github.com/JeremiasBulanadi/jdb.dev" class="text-gray-300 text-xs">
+			<a id="GithubLink" href="https://github.com/JeremiasBulanadi/jdb.dev" target="_blank" class="text-gray-300 text-xs">
 				github : jdb.dev
 			</a>
 		</footer>
