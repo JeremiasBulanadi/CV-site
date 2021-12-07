@@ -2,6 +2,7 @@
 	import Navbar from './components/Navbar.svelte';
 	import Intro from './components/Intro.svelte';
 	import About from './components/About.svelte';
+	import Contact from './components/Contact.svelte';
 	import IconBar from './components/IconBar.svelte';
 
 	import { onMount } from 'svelte';
@@ -22,6 +23,7 @@
 		<div class="container flex flex-col justify-center items-center">
 			<Intro/>
 			<About/>
+			<Contact/>
 		</div>
 
 		{#if firstLoaded}
