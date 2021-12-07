@@ -10,7 +10,7 @@
         If there is anything you would like to bring up
         with me, then I'm all ears. Send an email to
         the address: <span class="font-extrabold hover:text-indigo-500 transition">jdb.prog@gmail.com</span> or click the button
-        below and I'll try and respond as early as I can.
+        below and I'll try to respond as early as I can.
     </p>
     <div class="mx-auto">
         <a href="mailto:jdb.prog@gmail.com">
