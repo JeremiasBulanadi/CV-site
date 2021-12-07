@@ -6,8 +6,8 @@
     <div class="section-header flex flex-row items-center py-4">
         <h2 class="font-roboto font-extrabold text-3xl">Who Am I</h2>
     </div>
-    <div class="article-container flex flex-col sm:flex-row justify-center items-center">
-        <article>
+    <div class="article-container flex flex-col md:flex-row justify-center items-center">
+        <article class="text-justify text-lg">
             <p class="font-roboto mb-3">
                 Hi! I'm Jeremias Bulanadi, although most people call me Jay.
                 I've been playing with computers since 2002. As a lot of my
@@ -67,6 +67,7 @@
     }
     p {
         max-width: 500px;
+        margin-right: 10px;
     }
 
     ul {

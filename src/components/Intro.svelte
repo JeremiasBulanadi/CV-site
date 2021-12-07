@@ -7,7 +7,7 @@
     <h1 class="font-lato font-extrabold text-indigo-500 hover:text-indigo-600 transition">Jeremias Bulanadi.</h1>
     <h1 class="font-roboto font-bold text-gray-600 hover:text-gray-700 transition">I like building things.</h1>
     <div class="p-container">
-        <p class="font-roboto text-base">
+        <p class="font-roboto text-lg">
             I'm a soon to be computer science graduate. I have a passion
             for creative and rewarding work and I am also currently looking
             for jobs that can be an outlet.

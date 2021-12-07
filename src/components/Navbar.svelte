@@ -58,7 +58,7 @@
                     <Logo />
                 </div>
             </div>
-            <div class="nav-side flex items-stretch">
+            <div class="nav-side hidden md:flex items-stretch ">
                 <div class="tabs-container flex">
                     <Tab tabName={"Intro"} />
                     <Tab tabName={"About"} />

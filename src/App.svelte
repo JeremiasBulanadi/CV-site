@@ -31,6 +31,13 @@
 				<IconBar/>	
 			</div>
 		{/if}
+		
+		<footer class="flex flex-col justify-center items-center pt-4 pb-8 font-lato font-semibold text-gray-400 text-sm text-center">
+			<p >Site made by Jeremias Bulanadi</p>
+			<a id="GithubLink" href="https://github.com/JeremiasBulanadi/jdb.dev" class="text-gray-300 text-xs">
+				github : jdb.dev
+			</a>
+		</footer>
 	</div>
 </main>
 
@@ -38,6 +45,10 @@
 <style>
 	main {
 		min-height: 100vh;
+	}
+
+	#GithubLink {
+		color: #9CA3AF;
 	}
 
 	.container {
@@ -49,11 +60,9 @@
 	}
 
 	.side-bar-container {
-		display: none;
-		position: fixed;
-		
-		bottom: 0;
-		left: 40px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
 	}
 
 	@media (min-width: 640px) {
@@ -65,6 +74,11 @@
 	@media (min-width: 1024px) {
 		.side-bar-container {
 			display: block;
+			position: fixed;
+			
+			width: auto;
+			bottom: 0;
+			left: 40px;
 		}
 
 		.wrapper {
