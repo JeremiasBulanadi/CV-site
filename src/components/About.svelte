@@ -62,8 +62,8 @@
 
 <style>
     section {
-        margin: 10vw 0;
-        min-height: 80vh;
+        padding-top: 15vw;
+        margin-bottom: 15vw;
     }
     p {
         max-width: 500px;
@@ -102,7 +102,7 @@
     }
    .image-container {
         position: relative;
-        z-index: 2;
+        z-index: 0;
 
         min-width: 250px;
         min-height: 250px;
@@ -116,7 +116,7 @@
    .image-container::after {
         content: "";
         display: block;
-        z-index: -2;
+        z-index: -1;
         position: absolute;
         top: 15px;
         left: 15px;
