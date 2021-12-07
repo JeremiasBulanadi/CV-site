@@ -52,7 +52,7 @@
                 </li>
             </ul>
         </article>
-        <div class="image-container flex justify-center items-center m-9 bg-gray-500 text-white font-lato font-bold">
+        <div class="image-container flex justify-center items-center m-9 right-5 sm:right-0 sm:pr-0 bg-gray-500 text-white font-lato font-bold">
             <div class="image-holder bg-gray-500 flex justify-center items-center">
                 Picture TBA
             </div>
