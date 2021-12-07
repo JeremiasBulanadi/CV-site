@@ -81,6 +81,7 @@
         position: fixed;
         width: 100%;
 
+        z-index: 1000;
         padding-top: 80px; /* We need this to make navbar hide */
     }
 
