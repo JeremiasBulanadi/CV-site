@@ -1454,7 +1454,7 @@ var app = (function () {
     			t2 = text("If there is anything you would like to bring up\r\n        with me, then I'm all ears. Send an email to\r\n        the address: ");
     			span = element("span");
     			span.textContent = "jdb.prog@gmail.com";
-    			t4 = text(" or click the button\r\n        below and I'll try and respond as early as I can.");
+    			t4 = text(" or click the button\r\n        below and I'll try to respond as early as I can.");
     			t5 = space();
     			div = element("div");
     			a = element("a");
@@ -1467,11 +1467,11 @@ var app = (function () {
     			attr_dev(p, "class", "text-justify max-w-2xl font-roboto text-xl svelte-1u6sr6r");
     			add_location(p, file$2, 8, 4, 193);
     			attr_dev(button, "class", "mt-12 bg-transparent hover:bg-gray-700 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-700 hover:border-transparent rounded transition");
-    			add_location(button, file$2, 16, 12, 644);
+    			add_location(button, file$2, 16, 12, 643);
     			attr_dev(a, "href", "mailto:jdb.prog@gmail.com");
-    			add_location(a, file$2, 15, 8, 594);
+    			add_location(a, file$2, 15, 8, 593);
     			attr_dev(div, "class", "mx-auto");
-    			add_location(div, file$2, 14, 4, 563);
+    			add_location(div, file$2, 14, 4, 562);
     			attr_dev(section, "id", "Contact");
     			attr_dev(section, "class", "flex flex-col justify-center items-center svelte-1u6sr6r");
     			add_location(section, file$2, 4, 0, 25);
@@ -1856,6 +1856,7 @@ var app = (function () {
     			add_location(p, file, 35, 3, 1040);
     			attr_dev(a, "id", "GithubLink");
     			attr_dev(a, "href", "https://github.com/JeremiasBulanadi/jdb.dev");
+    			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "text-gray-300 text-xs svelte-1qb4a0r");
     			add_location(a, file, 36, 3, 1083);
     			attr_dev(footer, "class", "flex flex-col justify-center items-center pt-4 pb-8 font-lato font-semibold text-gray-400 text-sm text-center");
