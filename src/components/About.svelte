@@ -52,9 +52,9 @@
                 </li>
             </ul>
         </article>
-        <div class="image-container flex justify-center items-center m-9 right-5 sm:right-0 sm:pr-0 bg-gray-500 text-white font-lato font-bold">
-            <div class="image-holder bg-gray-500 flex justify-center items-center">
-                Picture TBA
+        <div class="image-container flex justify-center items-center m-9 right-5 sm:right-0 sm:pr-0 text-white font-lato font-bold">
+            <div class="image-holder flex justify-center items-center">
+                <img src="./jaydb.png" alt="Jeremias Bulanadi Profile Picture" class="transition">
             </div>
         </div>
     </div>
@@ -101,6 +101,17 @@
         height: 100%;
         border-radius: 1.5%;
     }
+
+    .image-holder > img {
+        filter: grayscale(1) brightness(1.25);
+        border-radius: 1.5%;
+    }
+
+    .image-holder > img:hover {
+        filter: none;
+        transform: translateY(-10px);
+    }
+
    .image-container {
         position: relative;
         z-index: 0;

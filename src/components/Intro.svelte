@@ -10,7 +10,7 @@
         <p class="font-roboto text-lg">
             I'm a soon to be computer science graduate. I have a passion
             for creative and rewarding work and I am also currently looking
-            for jobs that can be an outlet.
+            for jobs that can help me grow as a developer.
         </p>
     </div>
     
