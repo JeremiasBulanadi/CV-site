@@ -25,6 +25,14 @@ var app = (function () {
     function safe_not_equal(a, b) {
         return a != a ? b == b : a !== b || ((a && typeof a === 'object') || typeof a === 'function');
     }
+    let src_url_equal_anchor;
+    function src_url_equal(element_src, url) {
+        if (!src_url_equal_anchor) {
+            src_url_equal_anchor = document.createElement('a');
+        }
+        src_url_equal_anchor.href = url;
+        return element_src === src_url_equal_anchor.href;
+    }
     function is_empty(obj) {
         return Object.keys(obj).length === 0;
     }
@@ -1133,7 +1141,7 @@ var app = (function () {
     			t5 = space();
     			div0 = element("div");
     			p = element("p");
-    			p.textContent = "I'm a soon to be computer science graduate. I have a passion\r\n            for creative and rewarding work and I am also currently looking\r\n            for jobs that can be an outlet.";
+    			p.textContent = "I'm a soon to be computer science graduate. I have a passion\r\n            for creative and rewarding work and I am also currently looking\r\n            for jobs that can help me grow as a developer.";
     			t7 = space();
     			div1 = element("div");
     			a = element("a");
@@ -1150,12 +1158,12 @@ var app = (function () {
     			attr_dev(div0, "class", "p-container svelte-1ysctf2");
     			add_location(div0, file$4, 8, 4, 390);
     			attr_dev(button, "class", "bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 border border-gray-400 rounded shadow transition");
-    			add_location(button, file$4, 18, 12, 800);
+    			add_location(button, file$4, 18, 12, 815);
     			attr_dev(a, "href", "./JeremiasBulanadi-Resume.pdf");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$4, 17, 8, 730);
+    			add_location(a, file$4, 17, 8, 745);
     			attr_dev(div1, "class", "button-container svelte-1ysctf2");
-    			add_location(div1, file$4, 16, 4, 690);
+    			add_location(div1, file$4, 16, 4, 705);
     			attr_dev(section, "id", "Intro");
     			attr_dev(section, "class", "flex flex-col justify-center py-4 sm:py-4 svelte-1ysctf2");
     			add_location(section, file$4, 4, 0, 25);
@@ -1261,6 +1269,8 @@ var app = (function () {
     	let t25;
     	let div2;
     	let div1;
+    	let img;
+    	let img_src_value;
 
     	const block = {
     		c: function create() {
@@ -1310,16 +1320,16 @@ var app = (function () {
     			t25 = space();
     			div2 = element("div");
     			div1 = element("div");
-    			div1.textContent = "Picture TBA";
-    			attr_dev(h2, "class", "font-roboto font-extrabold text-3xl svelte-of1b79");
+    			img = element("img");
+    			attr_dev(h2, "class", "font-roboto font-extrabold text-3xl svelte-1u5oay8");
     			add_location(h2, file$3, 6, 8, 163);
-    			attr_dev(div0, "class", "section-header flex flex-row items-center py-4 svelte-of1b79");
+    			attr_dev(div0, "class", "section-header flex flex-row items-center py-4 svelte-1u5oay8");
     			add_location(div0, file$3, 5, 4, 93);
-    			attr_dev(p0, "class", "font-roboto mb-3 svelte-of1b79");
+    			attr_dev(p0, "class", "font-roboto mb-3 svelte-1u5oay8");
     			add_location(p0, file$3, 10, 12, 389);
-    			attr_dev(p1, "class", "font-roboto mb-3 svelte-of1b79");
+    			attr_dev(p1, "class", "font-roboto mb-3 svelte-1u5oay8");
     			add_location(p1, file$3, 16, 12, 751);
-    			attr_dev(p2, "class", "font-roboto svelte-of1b79");
+    			attr_dev(p2, "class", "font-roboto svelte-1u5oay8");
     			add_location(p2, file$3, 21, 12, 1047);
     			add_location(li0, file$3, 25, 16, 1233);
     			add_location(li1, file$3, 28, 16, 1310);
@@ -1330,18 +1340,22 @@ var app = (function () {
     			add_location(li6, file$3, 43, 16, 1679);
     			add_location(li7, file$3, 46, 16, 1751);
     			add_location(li8, file$3, 49, 16, 1820);
-    			attr_dev(ul, "class", "font-readex text-xs mt-5 ml-5 svelte-of1b79");
+    			attr_dev(ul, "class", "font-readex text-xs mt-5 ml-5 svelte-1u5oay8");
     			add_location(ul, file$3, 24, 12, 1173);
     			attr_dev(article, "class", "text-justify text-lg");
     			add_location(article, file$3, 9, 8, 337);
-    			attr_dev(div1, "class", "image-holder bg-gray-500 flex justify-center items-center svelte-of1b79");
-    			add_location(div1, file$3, 55, 12, 2073);
-    			attr_dev(div2, "class", "image-container flex justify-center items-center m-9 right-5 sm:right-0 sm:pr-0 bg-gray-500 text-white font-lato font-bold svelte-of1b79");
+    			if (!src_url_equal(img.src, img_src_value = "./jaydb.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Jeremias Bulanadi Profile Picture");
+    			attr_dev(img, "class", "transition svelte-1u5oay8");
+    			add_location(img, file$3, 56, 16, 2138);
+    			attr_dev(div1, "class", "image-holder flex justify-center items-center svelte-1u5oay8");
+    			add_location(div1, file$3, 55, 12, 2061);
+    			attr_dev(div2, "class", "image-container flex justify-center items-center m-9 right-5 sm:right-0 sm:pr-0 text-white font-lato font-bold svelte-1u5oay8");
     			add_location(div2, file$3, 54, 8, 1923);
-    			attr_dev(div3, "class", "article-container flex flex-col md:flex-row justify-center items-center svelte-of1b79");
+    			attr_dev(div3, "class", "article-container flex flex-col md:flex-row justify-center items-center svelte-1u5oay8");
     			add_location(div3, file$3, 8, 4, 242);
     			attr_dev(section, "id", "About");
-    			attr_dev(section, "class", "flex flex-col justify-center py-4 svelte-of1b79");
+    			attr_dev(section, "class", "flex flex-col justify-center py-4 svelte-1u5oay8");
     			add_location(section, file$3, 4, 0, 25);
     		},
     		l: function claim(nodes) {
@@ -1381,6 +1395,7 @@ var app = (function () {
     			append_dev(div3, t25);
     			append_dev(div3, div2);
     			append_dev(div2, div1);
+    			append_dev(div1, img);
     		},
     		p: noop,
     		i: noop,
