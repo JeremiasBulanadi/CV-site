@@ -15,7 +15,6 @@
     function deriveClass(y, dy) {
         // show if at the top of page
         if (y < offset) {
-            console.log("We docked now, we must **SHOW**");
             return "docked";
         }
 
@@ -36,7 +35,6 @@
 
     function updateClass(y) {
         const dy = lastY - y;
-        console.table(lastY,y,dy);
         lastY = y;
         return deriveClass(y, dy);
     }
