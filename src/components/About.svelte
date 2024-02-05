@@ -2,16 +2,15 @@
 
 </script>
 
-<section id="About" class="flex flex-col justify-center py-4">
+<section id="About" class="flex flex-col justify-center py-4 pl-4 pr-6">
     <div class="section-header flex flex-row items-center py-4">
         <h2 class="font-roboto font-extrabold text-3xl">Who Am I</h2>
     </div>
     <div class="article-container flex flex-col md:flex-row justify-center items-center">
-        <article class="text-justify text-lg">
+        <article class="text-left text-lg">
             <p class="font-roboto mb-3">
                 Hi! I'm Jeremias Bulanadi, although most people call me Jay.
-                I've been playing with computers since 2002. As a lot of my
-                interests revolved around technology, I took up coding as a
+                I've been playing with computers since 2002. I took up coding as a
                 hobby ; And then soon thereafter, a possible career.
             </p>
             <p class="font-roboto mb-3">
@@ -22,7 +21,7 @@
             <p class="font-roboto">
                 My recent escapades involved the use and learning of:
             </p>
-            <ul class="font-readex text-xs mt-5 ml-5">
+            <ul class="font-readex text-xs mt-6 ml-5">
                 <li>
                     Javascript
                 </li>
@@ -42,19 +41,19 @@
                     React
                 </li>
                 <li>
-                    Unity
+                    Golang
                 </li>
                 <li>
                     C#
                 </li>
                 <li>
-                    Godot
+                    Java
                 </li>
             </ul>
         </article>
         <div class="image-container flex justify-center items-center m-9 right-5 sm:right-0 sm:pr-0 text-white font-lato font-bold">
             <div class="image-holder flex justify-center items-center">
-                <img src="./jaydb.png" alt="Jeremias Bulanadi Profile Picture" class="transition">
+                <img src="./jaydb.png" alt="Jeremias Bulanadi" class="transition">
             </div>
         </div>
     </div>

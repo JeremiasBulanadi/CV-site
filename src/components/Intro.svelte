@@ -2,20 +2,20 @@
 
 </script>
 
-<section id="Intro" class="flex flex-col justify-center py-4 sm:py-4">
-    <h3 class="font-readex text-2xl">Hello, my name is</h3>
+<section id="Intro" class="flex flex-col justify-center py-4 sm:py-4 px-4">
+    <h3 class="font-readex text-xl text-gray-500">Hello, my name is...</h3>
     <h1 class="font-lato font-extrabold text-indigo-500 hover:text-indigo-600 transition">Jeremias Bulanadi.</h1>
-    <h1 class="font-roboto font-bold text-gray-600 hover:text-gray-700 transition">I like building things.</h1>
+    <h2 class="font-roboto font-bold text-3xl pt-4 sm:pt-0 text-gray-600 hover:text-gray-700 transition">I like building things.</h2>
     <div class="p-container">
         <p class="font-roboto text-lg">
-            I'm a soon to be computer science graduate. I have a passion
+            I'm a computer science graduate that worked as a software engineer. I have a passion
             for creative and rewarding work and I am also currently looking
-            for jobs that can help me grow as a developer.
+            for jobs that can help me grow.
         </p>
     </div>
     
     <div class="button-container">
-        <a href="./JeremiasBulanadi-Resume.pdf" target="_blank">
+        <a href="./JDB - Resume.pdf" target="_blank">
             <button class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 border border-gray-400 rounded shadow transition">
                 > Download my resume
             </button>

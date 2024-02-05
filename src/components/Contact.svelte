@@ -2,11 +2,11 @@
 
 </script>
 
-<section id="Contact" class="flex flex-col justify-center items-center">
-    <h1 class="mb-8 font-extrabold font-roboto text-6xl">
+<section id="Contact" class="flex flex-col justify-center items-center pl-4 pr-6">
+    <h1 class="mb-8 font-extrabold font-roboto text-5xl sm:text-6xl pr-4">
         Contact Me
     </h1>
-    <p class="text-justify max-w-2xl font-roboto text-xl">
+    <p class="text-left max-w-2xl font-roboto text-xl">
         If there is anything you would like to bring up
         with me, then I'm all ears. Send an email to
         the address: <span class="font-extrabold hover:text-indigo-500 transition">jdb.prog@gmail.com</span> or click the button
