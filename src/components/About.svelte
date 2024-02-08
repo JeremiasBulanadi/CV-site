@@ -23,10 +23,10 @@
             </p>
             <ul class="font-readex text-xs mt-6 ml-5">
                 <li>
-                    Javascript
+                    Typescript
                 </li>
                 <li>
-                    Typescript
+                    MySQL
                 </li>
                 <li>
                     Node.js
