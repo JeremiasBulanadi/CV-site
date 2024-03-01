@@ -1,5 +1,7 @@
 # jdb.dev
 
+https://jeremiasbulanadi.github.io/jdb.dev/
+
 My personal portfolio site that I will maintain to showcase my work and projects I have collaborated in.
 
 <!-- ABOUT THE PROJECT -->
